@@ -99,7 +99,7 @@ int main()
     case 2: cout << "Nice" << endl;
     case 1: cout << "Nice" << endl;
         break;
-    default: cout << "It's too." << endl;
+    default: cout << "It's too big." << endl;
         break;
     }
     
