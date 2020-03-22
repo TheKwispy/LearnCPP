@@ -29,13 +29,13 @@ Counter Counter::operator++() {
 int main() {
 	Counter i;
 	int resI = i.GetItsVal();
-	cout << "The value of i is " << res << endl;
+	cout << "The value of i is " << resI << endl;
 	i.Increment();
 	resI = i.GetItsVal();
-	cout << "The value of i is " << res << endl;
+	cout << "The value of i is " << resI << endl;
 	++i;
 	resI = i.GetItsVal();
-	cout << "The value of i is " << res << endl;
+	cout << "The value of i is " << resI << endl;
 	Counter a = ++i;
 	resI = i.GetItsVal();
 	int resA = a.GetItsVal();
