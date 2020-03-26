@@ -147,16 +147,17 @@ Part * PartsList::operator[](int offSet) const {
 
 Part* PartsList::Find(int & position, int PartNumber) const {
     PartNode * pNode=0;
-    for (pNode = pHead, position=0; pNode!=NULL; pNode = pNode->GetNext(), position++){
-        if (pNode->GetPart()->GetPartNumber() == PartNumber){
+    for (pNode = pHead, position=0; 
+        pNode!=NULL; 
+        pNode = pNode->GetNext(), position++)
+        {
+        if (pNode->GetPart()->GetPartNumber() == PartNumber)
             break;
-        }
-        if (pNode == NULL){
+            }
+        if (pNode == NULL)
             return NULL;
-        } else {
+         else 
             return pNode->GetPart();
-        }
-    }
 }
 
 void PartsList::Iterate() const{
