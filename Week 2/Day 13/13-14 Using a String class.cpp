@@ -157,5 +157,4 @@ int main(){
     s4 ="Why does this work?";
     cout << "S4:\t"<<s4.GetString() << endl;
     return 0;
-
 }
